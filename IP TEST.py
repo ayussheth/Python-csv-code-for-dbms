@@ -24,65 +24,65 @@ while(True):
     if x==2:
         print("This is a Python program to see and maintain record of sales of shoes")
         break
-    elif x==3:#working
+    if x==3:#working
         print("------------------------------------")
         #while(True):
-    print("A. Display Rows of the Sales")
-    print("B. Display columns of the Sales")
-    print("C. Display Both Rows and Columns of the Sales")  
-    print("D. Display the size of the Sales")
-    print("E. Display the shape of the Sales")
-    print("F. Display Axes of the Sales")
-    print("G. Exit")
-    ch=input("Enter Choice")
-    if ch=='A':
-        print(df.index)
-        break
-    elif ch=='B':
-        print(df.columns)
-        break
-    elif ch=='F':
-        print(df.axes)
-        break
-    elif ch=='D':
-        print(df.size)
-        break
-    elif ch=='C':
-        print("{COLUMNS}:",df.columns,"{AXES}:",df.axes)
-        break
-    elif ch=='E':
-        print(df.shape)
-        break
-    elif ch=='G':
-        print(df.empty)
-        break
+        print("A. Display Rows of the Sales")
+        print("B. Display columns of the Sales")
+        print("C. Display Both Rows and Columns of the Sales")  
+        print("D. Display the size of the Sales")
+        print("E. Display the shape of the Sales")
+        print("F. Display Axes of the Sales")
+        print("G. Exit")
+        ch=input("Enter Choice")
+        if ch=='A':
+            print(df.index)
+            break
+        elif ch=='B':
+            print(df.columns)
+            break
+        elif ch=='F':
+            print(df.axes)
+            break
+        elif ch=='D':
+            print(df.size)
+            break
+        elif ch=='C':
+            print("{COLUMNS}:",df.columns,"{AXES}:",df.axes)
+            break
+        elif ch=='E':
+            print(df.shape)
+            break
+        elif ch=='G':
+            print(df.empty)
+            break
     if x==4:
         print("------------------------------------")
-       # while(True):
-    print("Display Records Menu")
-    print("1. Top 5 Records")
-    print("2. Bottom 5 Records")
-    print("3. Specific number of records from the top")
-    print("4. Specific number of records from the bottam")
-    print("5. Exit")
-    ch4=int(input("Enter choice"))
-    if ch4==1:
-        print(df.head())
-        #break
-    elif ch4==2:
-        print(df.tail())
-        #break
-    elif ch4==3:
-        n=int(input("Enter how many records you want to display from the top"))
-        print(df.head(n))
-        #break
-    elif ch4==4:
-        n=int(input("Enter how many records you want to display from the bottom"))
-        print(df.tail(n))
-        #break
-    else:
-        print("INVAILD INPUT")
-    exit()
+        while(True):
+            print("Display Records Menu")
+            print("1. Top 5 Records")
+            print("2. Bottom 5 Records")
+            print("3. Specific number of records from the top")
+            print("4. Specific number of records from the bottam")
+            print("5. Exit")
+            ch4=int(input("Enter choice"))
+            if ch4==1:
+                print(df.head())
+                #break
+            elif ch4==2:
+                print(df.tail())
+                #break
+            elif ch4==3:
+                n=int(input("Enter how many records you want to display from the top"))
+                print(df.head(n))
+                #break
+            elif ch4==4:
+                n=int(input("Enter how many records you want to display from the bottom"))
+                print(df.tail(n))
+                #break
+            else:
+                print("INVAILD INPUT")
+            exit()
     #ch=5 
     if x==5:
         print("------------------------------------")
